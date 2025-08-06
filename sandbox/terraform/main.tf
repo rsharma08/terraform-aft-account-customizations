@@ -1,5 +1,4 @@
-resource "null_resource" "test_sandbox" {
-  provisioner "local-exec" {
-    command = "echo 'Sandbox customization executed!'"
-  }
+# main.tf
+module "s3_bucket" {
+  source = "./s3.tf"
 }
