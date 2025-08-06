@@ -1,4 +1,5 @@
-# main.tf
-module "s3_bucket" {
-  source = "./s3.tf"
+resource "null_resource" "test_customization" {
+  provisioner "local-exec" {
+    command = "echo 'Customization pipeline is triggered'"
+  }
 }
